@@ -22,11 +22,6 @@
     <!-- Add your site or application content here -->
     <div class="container">
       <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a ng-href="#">Home</a></li>
-          <li><a ng-href="#/about">About</a></li>
-          <li><a ng-href="#">Contact</a></li>
-        </ul>
         <h3 class="text-muted">processSt</h3>
       </div>
 
@@ -38,17 +33,6 @@
     </div>
 
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-     <script>
-       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-       ga('create', 'UA-XXXXX-X');
-       ga('send', 'pageview');
-    </script>
-
     <!-- build:js(.) scripts/oldieshim.js -->
     <!--[if lt IE 9]>
     <script src="bower_components/es5-shim/es5-shim.js"></script>
@@ -58,7 +42,19 @@
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
+    <script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
     <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/jquery-ui/jquery-ui.js"></script>
+
+    <script src="bower_components/blueimp-tmpl/js/tmpl.js"></script>
+    <script src="bower_components/blueimp-load-image/js/load-image.js"></script>
+    <script src="bower_components/blueimp-load-image/js/load-image-ios.js"></script>
+    <script src="bower_components/blueimp-load-image/js/load-image-orientation.js"></script>
+    <script src="bower_components/blueimp-load-image/js/load-image-meta.js"></script>
+    <script src="bower_components/blueimp-load-image/js/load-image-exif.js"></script>
+    <script src="bower_components/blueimp-load-image/js/load-image-exif-map.js"></script>
+    <script src="bower_components/blueimp-canvas-to-blob/js/canvas-to-blob.js"></script>
+    <script src="bower_components/jquery-file-upload/js/jquery.fileupload.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
     <script src="bower_components/angular-animate/angular-animate.js"></script>
@@ -74,6 +70,7 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/directives/video-uploader.js"></script>
         <!-- endbuild -->
 </body>
 </html>

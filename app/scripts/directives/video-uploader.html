@@ -1,0 +1,28 @@
+<div>
+  <input
+    id="fileupload"
+    type="file"
+    name="video"
+    multiple
+  >
+
+  <div class="progress" ng-if="!uploadFinished">
+    <div
+      class="progress-bar"
+      role="progressbar"
+      aria-valuenow="60"
+      aria-valuemin="0"
+      aria-valuemax="100"
+      ng-style="{ width: progress }"
+    >
+    </div>
+  </div>
+
+  <div ng-if="uploadFailed">
+    Sorry, something went wrong.
+  </div>
+
+  <div ng-if="uploadFinished">
+    <video ng-src="{{ videoUrl }}" type="video/mp4" width="320" height="240" controls></video>
+  </div>
+</div>
